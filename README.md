@@ -20,17 +20,44 @@ In order to answer the business questions, we will follow the steps of the data 
 
 ## Ask
 
+In the Ask phase, we lay down the objectives of the case study, the target question and the business task.
+
 **Target Question: How do annual members and casual riders use Cyclistic bikes differently?**
 
 **Business Task: To identify the differences between members and casual riders on how they use Cyclistic's bike-share services differently in order to build strategies to convert casual riders to annual members.**
 
 
-## Data Source, Data Privacy & Important Information
+## Prepare
+
+In the Prepare phase, we start to gather relevant and credible data for our analysis from a trusted source. We want to answer the following questions in this phase:
+
+
+1. Where is the data located?
 
 We will be using Cyclistic's historical data to analyse and identify trends. The data for the case study can be found [here](https://divvy-tripdata.s3.amazonaws.com/index.html).
 
-At the time of completion, the latest data available for the last 12 months being considered is March 2024 to February 2025.
 
-**Data Privacy Note: The datasets have a different name because Cyclistic is a fictional company. For the purposes of this case study, the datasets are appropriate and allow us to answer the business questions. The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement). This is public data that can be used to explore how different customer types are using Cyclistic bikes. Also, due to data-privacy concerns, no personally identifiable information is available/used in this data set.**
+2. How is the data organized?
+
+The data is organized by months, quarters and years. At the time of completion, the latest data available for the last 12 months being considered is March 2024 to February 2025.
+
+
+3. Are there issues with bias or credibility in this data? Does the data ROCCC?
+
+
+4. How do we address licensing, privacy, security, and accessibility?
+
+The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement). It can be confirmed that the usage of this data is not This is public data that can be used to explore how different customer types are using Cyclistic bikes. 
+
+**Data Privacy Note: The datasets have a different name because Cyclistic is a fictional company. For the purposes of this case study, the datasets are appropriate and allow us to answer the business questions. Also, due to data-privacy concerns, no personally identifiable information is available/used in this data set.**
+
+
+5. How do we verify the data’s integrity?
+
+
+6. Are there any problems with the data?
+
+
+
 
 
