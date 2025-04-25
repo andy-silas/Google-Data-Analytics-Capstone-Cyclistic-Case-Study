@@ -56,10 +56,12 @@ The data has been made available by Motivate International Inc. under this [lice
 
 ## 5. How do we verify the data’s integrity?
 
+The data used satisfies its data intergrity criteria as it is unbiased. No personal information on riders is available, and its comprised of all bike trips recorded during a given time period.
+
 
 ## 6. Are there any problems with the data?
 
-
+The data contains several NULL values which shall be addressed during the data cleaning process.
 
 
 
