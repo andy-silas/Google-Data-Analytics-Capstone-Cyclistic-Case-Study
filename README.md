@@ -32,34 +32,34 @@ In the Ask phase, we lay down the objectives of the case study, the target quest
 In the Prepare phase, we start to gather relevant and credible data for our analysis from a trusted source. We want to answer the following questions in this phase:
 
 
-## 1. Where is the data located?
+### 1. Where is the data located?
 
 We will be using Cyclistic's historical data to analyse and identify trends. The data for the case study can be found [here](https://divvy-tripdata.s3.amazonaws.com/index.html).
 
 
-## 2. How is the data organized?
+### 2. How is the data organized?
 
 The data is organized by months, quarters and years. At the time of completion, the latest data available for the last 12 months being considered is March 2024 to February 2025.
 
 
-## 3. Are there issues with bias or credibility in this data? Does the data ROCCC?
+### 3. Are there issues with bias or credibility in this data? Does the data ROCCC?
 
 It is confirmed that the data used satisfies the ROCCC criteria since its officially permitted for use under proper authorized [license](https://www.divvybikes.com/data-license-agreement). The data is Reliable, Original, Comprehensive, Current, and Cited.
 
 
-## 4. How do we address licensing, privacy, security, and accessibility?
+### 4. How do we address licensing, privacy, security, and accessibility?
 
 The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement). It can be confirmed that this is public data that can be used to explore how different customer types are using Cyclistic bikes. 
 
 **Data Privacy Note: The datasets have a different name because Cyclistic is a fictional company. For the purposes of this case study, the datasets are appropriate and allow us to answer the business questions. Also, due to data-privacy concerns, no personally identifiable information is available/used in this data set.**
 
 
-## 5. How do we verify the data’s integrity?
+### 5. How do we verify the data’s integrity?
 
 The data used satisfies its data intergrity criteria as it is unbiased. No personal information on riders is available, and its comprised of all bike trips recorded during a given time period.
 
 
-## 6. Are there any problems with the data?
+### 6. Are there any problems with the data?
 
 The data contains several NULL values which shall be addressed during the data cleaning process.
 
