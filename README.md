@@ -49,7 +49,7 @@ It is confirmed that the data used satisfies the ROCCC criteria since its offici
 
 ## 4. How do we address licensing, privacy, security, and accessibility?
 
-The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement). It can be confirmed that the usage of this data is not This is public data that can be used to explore how different customer types are using Cyclistic bikes. 
+The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement). It can be confirmed that this is public data that can be used to explore how different customer types are using Cyclistic bikes. 
 
 **Data Privacy Note: The datasets have a different name because Cyclistic is a fictional company. For the purposes of this case study, the datasets are appropriate and allow us to answer the business questions. Also, due to data-privacy concerns, no personally identifiable information is available/used in this data set.**
 
