@@ -64,4 +64,16 @@ The data used satisfies its data intergrity criteria as it is unbiased. No perso
 The data contains several NULL values which shall be addressed during the data cleaning process.
 
 
+## Prepare
+
+In this phase, the data was downloaded for the last 12 months. At the time of completion, the latest data available for the last 12 months being considered is March 2024 to February 2025.
+
+For combining the data in each file, PostgreSQL is used and the following steps are carried out:
+
+1. A database titled 'divvy_bikes' is created
+2. A table titled 'bikes_new' is created within the database by specifying each column name and its data type.
+3. The 12 .csv files are imported into the 'bikes-new' table one by one to merge the data into a single table.
+
+
+
 
