@@ -185,7 +185,7 @@ Finally, we check if there are any nulls left in **start_station_name** or **end
 
 ## Analyse 
 
-In this phase, we begin our analysis of the data by checking the following statistics to compare casual users and annual members based on the ride-type, trip duration and location:
+In this phase, we conduct our analysis of the data using SQL queries by checking the following statistics to compare casual users and annual members based on the ride-type, trip duration and location:
 
 1. Users by ride type
 2. Number of rides per month
@@ -198,7 +198,7 @@ In this phase, we begin our analysis of the data by checking the following stati
 9. End station for location for casuals
 10. End station for location for members
 
-
+The code for the above queries can be found here.
 
 
 
