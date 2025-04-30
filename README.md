@@ -185,7 +185,19 @@ Finally, we check if there are any nulls left in **start_station_name** or **end
 
 ## Analyse 
 
-In this phase, we begin our analysis of the data.
+In this phase, we begin our analysis of the data by checking the following statistics to compare casual users and annual members based on the ride-type, trip duration and location:
+
+1. Users by ride type
+2. Number of rides per month
+3. Number of rides per weekday
+4. Number of rides per hour
+5. Average ride duration per weekday
+6. Average ride duration per month
+7. Start station location for casuals
+8. Start station location for members
+9. End station for location for casuals
+10. End station for location for members
+
 
 
 
