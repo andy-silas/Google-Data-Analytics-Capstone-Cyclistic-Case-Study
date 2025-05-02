@@ -328,6 +328,6 @@ GROUP BY ride_type;
 
 SELECT DISTINCT COUNT(ride_type) AS count_ride_type, ride_type, user_type
 FROM bikes_new
-GROUP BY ride_type, user_type
+GROUP BY ride_type, user_type;
 
 -- SCREESHOT HERE --  
