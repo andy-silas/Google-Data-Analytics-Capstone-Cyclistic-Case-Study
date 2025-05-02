@@ -68,16 +68,15 @@ The data contains several NULL values which shall be addressed during the data c
 
 In this phase, the data was downloaded for the last 12 months. At the time of completion, the latest data available for the last 12 months being considered is March 2024 to February 2025.
 
-
 ### For combining the data in each file, PostgreSQL is used and the following steps are carried out:
 
 1. A database titled **'divvy_bikes'** is created
 2. A table titled **'bikes_new'** is created within the database by specifying each column name and its data type.
 3. The 12 .csv files are imported into the **'bikes-new'** table one by one to merge the data into a single table.
 
-### NOTE: The SQL code for all the queries in the Process Phase can be found [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql).
+**NOTE: The SQL code for all the queries in the Process Phase can be found [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql).**
 
-### Upon merging the files together, we move on to the cleaning phase where we first perform preliminary actions on the data through SQL (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L1)), including:
+**Upon merging the files together, we move on to the cleaning phase where we first perform preliminary actions on the data through SQL (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L1)), including:**
 
 1. Adding a **'ride_length'** column to the table.
 2. Add values to **'ride_length'** column by subtracting **'ended_at'** values from **'started_at'**. This will calculate the total trip duration in **hh:mm:ss** format.
@@ -89,7 +88,7 @@ In this phase, the data was downloaded for the last 12 months. At the time of co
 8. Add values to the **'year_name'** column - i.e. 2024 and 2025, based on the trip start dates in the **'started_at'** column.
 
 
-### After the above steps, a series of comprehensive data cleaning processes (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L59)) are performed as follows:
+**After the above steps, a series of comprehensive data cleaning processes (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L59)) are performed as follows:**
 
 1. Checking the number of letters in **'ride_id'** column to make sure it is unique. It is concluded that all results here are 16, i.e. all ride IDs are 16 characters long.
 2. Identification and deletion of duplicate rows (if any) from the **'bikes_new'** table based on the **'ride_id'**.
@@ -101,28 +100,26 @@ In this phase, the data was downloaded for the last 12 months. At the time of co
 8. Checking null values in **end_station_id**.
 9. Checking if there are only 2 user types in the **user_type** column. It is confirmed that only **'casual'** and **'member'** user types exist.
 
-
-### We then move on to check for outliers (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L156));
+**We then move on to check for outliers (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L156)):**
 
 1. Checking for rides that are less than or equal to 1 minute in **ride_length**. It is found that a total of 129085 rows meet this criteria. Hence they are removed from the table. 
 2. Checking for rides that are greater than or equal to 1 day in **ride_length**. It is found that a total of 295 rows meet this criteria. Hence they are removed from the table.
 
-### We then check the start/end_station_name/id columns for naming inconsistencies (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L184)). 
+**We then check the start/end_station_name/id columns for naming inconsistencies (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L184)).**
 
 It is found that 1805 such rows exist with 'null' being the most common value with a count of 1010771. We also notice some station names are similar, with some ending with *. We will investigate this later. 
 
-### We then check how many of these nulls are in **end_station_name** column for **classic_bike** trips (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L193)). 
+**We then check how many of these nulls are in **end_station_name** column for **classic_bike** trips (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L193)).**
 
 Since classic bike trips must end at a docking station, the **end_station_name** should not be null. Electric bikes having a bike lock option do not have this problem, as they do not have to start/end the ride at a docking station.
 
 It is found that 27 such rows exist in the table, and they are removed.
 
-### New Total Rows: 56,46,778
+**New Total Rows: 5646778**
 
-### Original number of rows were: 57,83,100
+**Original number of rows were: 5783100**
 
-### Total 1,36,322 rows removed
-
+**Total 136322 rows removed**
 
 ### Now we check again for the previous query, but this time with **end_station_id** being NULL (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L214)). 
 
@@ -139,7 +136,7 @@ Result: electric_bike and electric_scooter -- Just as we expected.
 Result: electric_bike and electric_scooter -- Just as we expected. So it can be confirmed that we have cleaned the data for classic and electric bikes/scooters.
 
 
-### Now, we proceed to update the NULL values in start_station_name and end_station_name for electric_bike and electric_scooter ride types to "On Bike Lock State" and "On Scooter Lock State" respectively (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L244)).
+**Now, we proceed to update the NULL values in start_station_name and end_station_name for electric_bike and electric_scooter ride types to "On Bike Lock State" and "On Scooter Lock State" respectively (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L244)).**
 
 1. First we check **start_station_name**, for **electric_bike**
 
@@ -172,7 +169,7 @@ We update these rows to set **end_station_name** to **'On Scooter Lock State'**
 Finally, we check if there are any nulls left in **start_station_name** or **end_station_name**. No rows meeting this criteria are found, so it is safe to conclude that all null station names have been replaced with relevant values.
 
 
-### We also check the no. of rides of each type and the no. of rides of each type per user type. The results can be see below:
+**We also check the no. of rides of each type and the no. of rides of each type per user type. The results can be see below:**
 
 --SCREENSHOTS TO BE INSERTED HERE--
 
@@ -199,10 +196,60 @@ In this phase, we conduct our analysis of the data using SQL queries by checking
 9. End station for location for casuals
 10. End station for location for members
 
-The code for the above queries can be found here (To insert Link here)
+**NOTE: The SQL code for all the queries in the Analyse Phase can be found [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/5c66638adefb926532c8aa0a96f68103bc60b0e4/Analyse%20Phase%20Code.sql).**
 
 
+## Share
+
+In this phase, we create visualizations using Tableau (Public). 
+
+### Visualization 1: Users by ride type
+
+For Viz no. 1 - we create a pie chart: [Total Rides - By User & Ride Type - Mar 24 to Feb 25](https://public.tableau.com/views/TotalRides-ByUserRideType-Mar24toFeb25-PieChart/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+We also create a bar chart for an alternate perspective: [Users By Ride Type - Mar 24 to Feb 25](https://public.tableau.com/views/UsersByRideType-Mar24toFeb25/UsersByRideType-Mar24toFeb25?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+### Visualization 2: Number of rides per month
+
+For Viz no. 2, we create a bar chart: [Number of Rides Per Month - Mar 24 to Feb 25](https://public.tableau.com/views/NumberofRidesPerMonth-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+### Visualization 3: Number of rides per weekday
+
+For Viz no. 3, we create a bar chart: [Number of Rides Per Weekday - Mar 24 to Feb 25](https://public.tableau.com/views/NumberofRidesPerWeekday-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+### Visualization 4: Number of rides per hour
+
+For Viz no. 4, we create a bar chart: [Number of Rides Per Hour - Mar 24 to Feb 25](https://public.tableau.com/views/NumberofRidesPerHour-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+### Visualization 5: Average ride duration per weekday
+
+For Viz no. 5 - Average ride duration per weekday, we calculate the total ride duration in minutes by converting seconds to minutes in excel:
+
+1. First we extract the minutes from the 'avg_trip_duration' column using the MINUTE() function in excel, in the 'mins' column
+2. Second, we extract the seconds from the 'avg_trip_duration' column using the SECOND() function in excel, in the 'seconds' column
+3. Then we convert the seconds to minutes by dividing them by 60 and rounding them to 2 decimal places, in the 'seconds_to_mins' column.
+4. Finally, we calculate the total minutes in 'total_mins' column by adding 'mins' column with 'seconds_to_mins'.
+5. Then we create the viz in Tableau using a horizontal bar chart: [Average Ride Duration Per Weekday - Mar 24 to Feb 25](https://public.tableau.com/views/AverageRideDurationPerWeekday-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) 
+
+### Visualization 6: Average ride duration per month
+
+For Viz no. 6 - Average ride duration per month, we do the same steps as above: [Average Ride Duration Per Month - Mar 24 to Feb 25](https://public.tableau.com/views/AverageRideDurationPerMonth-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
+**For the following visualizations, we use maps to look only at the top 10 locations to get an idea of the most popular locations among each user type:**
 
+### Visualization 7: Start station location for casuals
 
+For Viz no. 7, see the map [here](https://public.tableau.com/views/Top10MostPopularStartStationsforCasualRiders-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+### Visualization 8: Start station location for members
+
+For Viz no. 8, see the map [here](https://public.tableau.com/views/Top10MostPopularStartStationsforMemberRiders-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+### Visualization 9: End station for location for casuals
+
+For Viz no. 9, see the map [here](https://public.tableau.com/views/Top10MostPopularEndStationsforCasualRiders-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+### Visualization 10: End station for location for members
+
+For Viz no. 10, see the map [here](https://public.tableau.com/views/Top10MostPopularEndStationsforMemberRiders-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
