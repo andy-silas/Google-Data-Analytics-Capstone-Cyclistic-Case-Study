@@ -198,7 +198,8 @@ In this phase, we conduct our analysis of the data using SQL queries by checking
 9. End station for location for casuals
 10. End station for location for members
 
-The code for the above queries can be found here. 
+The code for the above queries can be found here (To insert Link here)
+
 
 
 
