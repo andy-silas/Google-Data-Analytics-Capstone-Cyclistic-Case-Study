@@ -101,7 +101,7 @@ In this phase, the data was downloaded for the last 12 months. At the time of co
 9. Checking if there are only 2 user types in the **user_type** column. It is confirmed that only **'casual'** and **'member'** user types exist.
 
 
-### We then move on the check for outliers;
+### We then move on to check for outliers;
 
 1. Checking for rides that are less than or equal to 1 minute in **ride_length**. It is found that a total of 129085 rows meet this criteria. Hence they are removed from the table. 
 2. Checking for rides that are greater than or equal to 1 day in **ride_length**. It is found that a total of 295 rows meet this criteria. Hence they are removed from the table.
