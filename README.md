@@ -75,6 +75,7 @@ In this phase, the data was downloaded for the last 12 months. At the time of co
 2. A table titled **'bikes_new'** is created within the database by specifying each column name and its data type.
 3. The 12 .csv files are imported into the **'bikes-new'** table one by one to merge the data into a single table.
 
+### NOTE: The code for all the queries in the Process Phase can be found [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql).
 
 ### Upon merging the files together, we move on to the cleaning phase where we first perform preliminary actions on the data through SQL, including:
 
