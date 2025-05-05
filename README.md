@@ -91,7 +91,7 @@ In this phase, the data was downloaded for the last 12 months. At the time of co
 **After the above steps, a series of comprehensive data cleaning processes (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L59)) are performed as follows:**
 
 1. Checking the number of letters in **'ride_id'** column to make sure it is unique. It is concluded that all results here are 16, i.e. all ride IDs are 16 characters long.
-2. Identification and deletion of duplicate rows (if any) from the **'bikes_new'** table based on the **'ride_id'**.
+2. Identification and deletion* of duplicate rows (if any) from the **'bikes_new'** table based on the **'ride_id'**.
 3. Checking for NULL values where **start_station_name**, **start_station_id**, **end_station_name** and **end_station_id** are all NULL.
 4. Checking and removing any rows where **start/end_lat** or **start/end_lng** are NULL, since each ride record (row) should have location coordinates.
 5. Checking null values in **start_station_name**.
@@ -100,7 +100,9 @@ In this phase, the data was downloaded for the last 12 months. At the time of co
 8. Checking null values in **end_station_id**.
 9. Checking if there are only 2 user types in the **user_type** column. It is confirmed that only **'casual'** and **'member'** user types exist.
 
-**We then move on to check for outliers (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L156)):**
+***NOTE: Upon inspecting the data, it is found that 422 duplicates are found, where common trip records exist in the months of May and June only. These 422 records are identified and removed accordingly using the query in the code, and the unique 211 records are reuploaded to the table after performing a VLOOKUP check on ride_id between the May and June data sets.** 
+
+**We then move on to check for outliers to make sure the data analysis is not skewed due to them (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L156)):**
 
 1. Checking for rides that are less than or equal to 1 minute in **ride_length**. It is found that a total of 129085 rows meet this criteria. Hence they are removed from the table. 
 2. Checking for rides that are greater than or equal to 1 day in **ride_length**. It is found that a total of 295 rows meet this criteria. Hence they are removed from the table.
@@ -209,17 +211,31 @@ For Viz no. 1 - we create a pie chart: [Total Rides - By User & Ride Type - Mar 
 
 We also create a bar chart for an alternate perspective: [Users By Ride Type - Mar 24 to Feb 25](https://public.tableau.com/views/UsersByRideType-Mar24toFeb25/UsersByRideType-Mar24toFeb25?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+Looking at the pie chart, it puts things into clear perspective for us to draw the following observations:
+
+1. Members constitute of 63.5% of the total rides, while casual users comprise of 36.5%
+2. It can be said that both casual users and members prefer electric bikes, where ~20% of total rides are electric rides by casual users (including both electric bike and electric scooter), while ~36% of total riides are electric rides by members (including both electric bike and electric scooter).
+3. The classic bike share in casual users is 16.67% of total rides, while for members it is 29.44%.
+4. Thus it can be said that members hold the majority in usage of both types of bikes.
+
 ### Visualization 2: Number of rides per month
 
 For Viz no. 2, we create a bar chart: [Number of Rides Per Month - Mar 24 to Feb 25](https://public.tableau.com/views/NumberofRidesPerMonth-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+It can be observed that during peak summers of June, July, August and September, the casual riders maintain a fairly consistent usage share, but as we move towards the winter seasons of October and beyond, the usage share drops quite substantially in casual users, when compared to members.
 
 ### Visualization 3: Number of rides per weekday
 
 For Viz no. 3, we create a bar chart: [Number of Rides Per Weekday - Mar 24 to Feb 25](https://public.tableau.com/views/NumberofRidesPerWeekday-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+A clear trend can be seen where the ride share is higher in members durring the working days, while it becomes more evenly matched between casuals and members during the weekends on Saturdays and Sundays.
+
 ### Visualization 4: Number of rides per hour
 
 For Viz no. 4, we create a bar chart: [Number of Rides Per Hour - Mar 24 to Feb 25](https://public.tableau.com/views/NumberofRidesPerHour-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+1. Usage by members increases sharply between the office commute hours of 6:00 AM - 8:00 AM and 4:00 PM - 6:00 PM, followed by a steady drop in usage during the rest of the day.
+2. Usage by casuals increases and decreases at much more steady and consistent rates, suggesting most of their usage for leisure instead of work commute. 
 
 ### Visualization 5: Average ride duration per weekday
 
@@ -253,3 +269,9 @@ For Viz no. 9, see the map [here](https://public.tableau.com/views/Top10MostPopu
 ### Visualization 10: End station for location for members
 
 For Viz no. 10, see the map [here](https://public.tableau.com/views/Top10MostPopularEndStationsforMemberRiders-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+
+## Act
+
+In this phase, we 
+
