@@ -234,8 +234,8 @@ A clear trend can be seen where the ride share is higher in members durring the 
 
 For Viz no. 4, we create a bar chart: [Number of Rides Per Hour - Mar 24 to Feb 25](https://public.tableau.com/views/NumberofRidesPerHour-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-1. Usage by members increases sharply between the office commute hours of 6:00 AM - 8:00 AM and 4:00 PM - 6:00 PM, followed by a steady drop in usage during the rest of the day.
-2. Usage by casuals increases and decreases at much more steady and consistent rates, suggesting most of their usage for leisure instead of work commute. 
+1. Usage by members increases sharply between the office/college commute hours of 6:00 AM - 8:00 AM and 4:00 PM - 6:00 PM, followed by a steady drop in usage during the rest of the day.
+2. Usage by casuals increases and decreases at much more steady and consistent rates, suggesting most of their usage for leisure instead of work/college commute. 
 
 ### Visualization 5: Average ride duration per weekday
 
@@ -245,12 +245,15 @@ For Viz no. 5 - Average ride duration per weekday, we calculate the total ride d
 2. Second, we extract the seconds from the 'avg_trip_duration' column using the SECOND() function in excel, in the 'seconds' column
 3. Then we convert the seconds to minutes by dividing them by 60 and rounding them to 2 decimal places, in the 'seconds_to_mins' column.
 4. Finally, we calculate the total minutes in 'total_mins' column by adding 'mins' column with 'seconds_to_mins'.
-5. Then we create the viz in Tableau using a horizontal bar chart: [Average Ride Duration Per Weekday - Mar 24 to Feb 25](https://public.tableau.com/views/AverageRideDurationPerWeekday-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) 
+5. Then we create the viz in Tableau using a horizontal bar chart: [Average Ride Duration Per Weekday - Mar 24 to Feb 25](https://public.tableau.com/views/AverageRideDurationPerWeekday-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+Clearly, it can be observed that the annual members' average trip durations are very much consistent and similar during the working days, while the casual users have consistently much longer trips, specially on the weekends when the difference in average trip duration becomes much more considerable (nearly x2).
 
 ### Visualization 6: Average ride duration per month
 
 For Viz no. 6 - Average ride duration per month, we do the same steps as above: [Average Ride Duration Per Month - Mar 24 to Feb 25](https://public.tableau.com/views/AverageRideDurationPerMonth-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+In this viz, it can once again be clearly seen that the usage is based on the weather conditions for both user types, where trip durations remain consistent among annual members, once again signalling their usage for work or college commute throughout the year, while casual users are seen taking much longer rides, nearly x2 longer than annual members during peak summer months of May, June and July, most likely for leisure.
 
 **For the following visualizations, we use maps to look only at the top 10 locations to get an idea of the most popular locations among each user type:**
 
@@ -258,9 +261,13 @@ For Viz no. 6 - Average ride duration per month, we do the same steps as above: 
 
 For Viz no. 7, see the map [here](https://public.tableau.com/views/Top10MostPopularStartStationsforCasualRiders-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+This highlights the top 10 start stations for casuals, where all of them are noteworthy locations for leisure and tourism, such as Theater on the Lake, Shedd Aquarium, Adler Planetarium and more.
+
 ### Visualization 8: Start station location for members
 
 For Viz no. 8, see the map [here](https://public.tableau.com/views/Top10MostPopularStartStationsforMemberRiders-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+We 
 
 ### Visualization 9: End station for location for casuals
 
