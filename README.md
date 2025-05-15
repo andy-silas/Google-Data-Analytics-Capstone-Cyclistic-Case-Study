@@ -267,11 +267,13 @@ This highlights the top 10 start stations for casuals, where all of them are not
 
 For Viz no. 8, see the map [here](https://public.tableau.com/views/Top10MostPopularStartStationsforMemberRiders-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-We 
+We can observe that members are utilising these stations primarily for work, school or college commute due to the landmarks in the vicinity of the stations such as apartments, banks, colleges and commercial businesses, offices, hotels etc. in the district near Wells St & Concord Ln, Clark St & Elm St, Wells St & Elm St, Kingsbury St & Kinzie St and more.
 
 ### Visualization 9: End station for location for casuals
 
 For Viz no. 9, see the map [here](https://public.tableau.com/views/Top10MostPopularEndStationsforCasualRiders-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+
 
 ### Visualization 10: End station for location for members
 
