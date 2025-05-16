@@ -267,20 +267,48 @@ This highlights the top 10 start stations for casuals, where all of them are not
 
 For Viz no. 8, see the map [here](https://public.tableau.com/views/Top10MostPopularStartStationsforMemberRiders-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-We can observe that members are utilising these stations primarily for work, school or college commute due to the landmarks in the vicinity of the stations such as apartments, banks, colleges and commercial businesses, offices, hotels etc. in the district near Wells St & Concord Ln, Clark St & Elm St, Wells St & Elm St, Kingsbury St & Kinzie St and more.
+We can observe that members are utilising these stations primarily for work, school or college commute due to the landmarks in the vicinity of the stations such as apartments, banks, colleges and commercial businesses and offices in the city's financial diistrict hotels etc. in the district near Wells St & Concord Ln, Clark St & Elm St, Wells St & Elm St, Kingsbury St & Kinzie St and more.
 
 ### Visualization 9: End station for location for casuals
 
 For Viz no. 9, see the map [here](https://public.tableau.com/views/Top10MostPopularEndStationsforCasualRiders-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-
+The observations are again consistent with the analysis that casual riders are more focussed on popular tourist spots, shopping centers, city views, etc. as highlighted in Viz no. 7.
 
 ### Visualization 10: End station for location for members
 
 For Viz no. 10, see the map [here](https://public.tableau.com/views/Top10MostPopularEndStationsforMemberRiders-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+The observations are again consistent with the analysis that annual members are using the services for their daily commute, as highlighted in Viz no. 8. 
+
+
+### From our detailed analysis above using the visualizations, we can draw the following conclusions:
+
+### Casual Users:
+
+1. They are mainly focussed on using the bike-sharing services for leisure and recreational purposes.
+2. Their main choices are the city's popular tourist spots, shopping centers, etc. Their average ride duration (19.12 minutes) is consitently nearly 2x when compared to annual members.
+3. Their usage peaks during spring (March - May) and summers (June - August) when its ideal for such activities.
+4. Most of their rides start between 10:00 AM - 12:00 PM, growing consistently in the following hours and reaching a peak between 4:00 PM - 6:00 PM 
+
+### Annual Members:
+
+1. They are more focussed on using the bike-sharing services for their daily commute rides to work/school/college.
+2. Their average ride duration (11.84 minutes) is also much more consistent throughout the year and nearly half when compared to that of casual users, again reinforcing the previous observation.
+3. The number of rides taken is much more consistent throughout the year when compared to casual users.
+4. The usage is notably higher during the winter months of November - February, where a sharp decline in total rides is observed among casual users.
+
 
 ## Act
 
-In this phase, we 
+Given the above observations and conclusions on the differences in usage of the bike-sharing services between casual users and annual members, the following recommendations can be provided to the marketing team in order to develop strategies to convert more casual users to annual members:
 
+1. The top 10 stations as showncan be targeted for advertising annual membership benefits.
+2. The company can also advertise near popular tourist spots for better visibility. 
+3. Advertisements in public transport can be increased around both popular commute routes for work/schools/colleges as well as tourist spots in order to target potential casual users who may not be using the service yet, and then in turn target them for annual memberships.
+4. Additional perks, such as weekend free passes and free membership trials can be provided to try and convert the casual users.
+5. A bonus number of rides/increased ride limits can be offered as additional benifts current members to retain them and keep them engaged.
+6. A survey campaign can be launched with perks associated, such as ride passes or a percentage discount of membership purchase/renewals, in order to gather user feedback from both casual users and annual members on how the services can be improved.
+
+
+This case study was a great opportunity for learning and developing my data analytics skills, as well as putting them to good use. Thank you for valuable time in going through my analysis on this case-study. 
