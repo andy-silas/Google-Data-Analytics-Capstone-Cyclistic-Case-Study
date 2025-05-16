@@ -303,12 +303,12 @@ The observations are again consistent with the analysis that annual members are 
 
 Given the above observations and conclusions on the differences in usage of the bike-sharing services between casual users and annual members, the following recommendations can be provided to the marketing team in order to develop strategies to convert more casual users to annual members:
 
-1. The top 10 stations as showncan be targeted for advertising annual membership benefits.
+1. The top 10 stations as shown can be targeted for advertising annual membership benefits.
 2. The company can also advertise near popular tourist spots for better visibility. 
 3. Advertisements in public transport can be increased around both popular commute routes for work/schools/colleges as well as tourist spots in order to target potential casual users who may not be using the service yet, and then in turn target them for annual memberships.
 4. Additional perks, such as weekend free passes and free membership trials can be provided to try and convert the casual users.
-5. A bonus number of rides/increased ride limits can be offered as additional benifts current members to retain them and keep them engaged.
-6. A survey campaign can be launched with perks associated, such as ride passes or a percentage discount of membership purchase/renewals, in order to gather user feedback from both casual users and annual members on how the services can be improved.
+5. A bonus number of rides/increased ride limits can be offered as additional benifts for current members to retain them and keep them engaged.
+6. A survey campaign can be launched with perks associated, such as ride passes or a percentage discount for membership purchase/renewals, in order to gather user feedback from both casual users and annual members on how the services can be improved.
 
 
 This case study was a great opportunity for learning and developing my data analytics skills, as well as putting them to good use. Thank you for valuable time in going through my analysis on this case-study. 
