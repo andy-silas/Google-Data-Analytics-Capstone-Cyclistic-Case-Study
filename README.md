@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This case study is based on the Google Data Analytics Capstone Course from Coursera, where I selected the Cyclistic Bike-Share Analysis Case Study as per Track A to complete the Capstone course towards earning my Google Data Analytics Professional Certificate. I will be discussing on the data compilation and pre-cleaning activities, followed by cleaning, as well as the analysis itself. The tools used in this case study will be SQL (PostgreSQL) and Tableau (Public).
+This case study is based on the Google Data Analytics Capstone Course from Coursera, where I selected the Cyclistic Bike-Share Analysis Case Study as per Track A to complete the Capstone course towards earning my Google Data Analytics Professional Certificate. I will be discussing on the data compilation and preliminary checks, followed by cleaning, as well as the analysis itself. The tools used in this case study will be SQL (PostgreSQL) and Tableau (Public).
 
 
 ## About Cyclistic
