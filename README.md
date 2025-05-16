@@ -109,7 +109,7 @@ In this phase, the data was downloaded for the last 12 months. At the time of co
 
 **We then check the start/end_station_name/id columns for naming inconsistencies (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L184)).**
 
-It is found that 1805 such rows exist with 'null' being the most common value with a count of 1010771. We also notice some station names are similar, with some ending with *. We will investigate this later. 
+It is found that 1805 such rows exist with 'null' being the most common value with a count of 1010771.
 
 **We then check how many of these nulls are in **end_station_name** column for **classic_bike** trips (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L193)).**
 
