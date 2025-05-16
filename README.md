@@ -100,7 +100,7 @@ In this phase, the data was downloaded for the last 12 months. At the time of co
 8. Checking null values in **end_station_id**.
 9. Checking if there are only 2 user types in the **user_type** column. It is confirmed that only **'casual'** and **'member'** user types exist.
 
-***NOTE: Upon inspecting the data, it is found that 422 duplicates are found, where common trip records exist in the months of May and June only. These 422 records are identified and removed accordingly using the query in the code, and the unique 211 records are reuploaded to the table after performing a VLOOKUP check on ride_id between the May and June data sets.** 
+***NOTE: Upon inspecting the data, 422 duplicates are identified, where common trip records exist in the months of May and June only. These 422 records are identified and removed accordingly using the query in the code, and the unique 211 records are reuploaded to the table after performing a VLOOKUP check on ride_id between the May and June data sets.** 
 
 **We then move on to check for outliers to make sure the data analysis is not skewed due to them (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L156)):**
 
