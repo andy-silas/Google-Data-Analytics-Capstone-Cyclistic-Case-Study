@@ -247,13 +247,13 @@ For Viz no. 5 - Average ride duration per weekday, we calculate the total ride d
 4. Finally, we calculate the total minutes in 'total_mins' column by adding 'mins' column with 'seconds_to_mins'.
 5. Then we create the viz in Tableau using a horizontal bar chart: [Average Ride Duration Per Weekday - Mar 24 to Feb 25](https://public.tableau.com/views/AverageRideDurationPerWeekday-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-Clearly, it can be observed that the annual members' average trip durations are very much consistent and similar during the working days, while the casual users have consistently much longer trips, specially on the weekends when the difference in average trip duration becomes much more considerable (nearly x2).
+Clearly, it can be observed that the annual members' average trip durations are very much consistent and similar during the working days, while the casual users have consistently much longer trips, specially on the weekends when the difference in average trip duration becomes much more considerable (nearly 2x).
 
 ### Visualization 6: Average ride duration per month
 
 For Viz no. 6 - Average ride duration per month, we do the same steps as above: [Average Ride Duration Per Month - Mar 24 to Feb 25](https://public.tableau.com/views/AverageRideDurationPerMonth-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-In this viz, it can once again be clearly seen that the usage is based on the weather conditions for both user types, where trip durations remain consistent among annual members, once again signalling their usage for work or college commute throughout the year, while casual users are seen taking much longer rides, nearly x2 longer than annual members during peak summer months of May, June and July, most likely for leisure.
+In this viz, it can once again be clearly seen that the usage is based on the weather conditions for both user types, where trip durations remain consistent among annual members, once again signalling their usage for work or college commute throughout the year, while casual users are seen taking much longer rides, nearly 2x longer than annual members during peak summer months of May, June and July, most likely for leisure.
 
 **For the following visualizations, we use maps to look only at the top 10 locations to get an idea of the most popular locations among each user type:**
 
