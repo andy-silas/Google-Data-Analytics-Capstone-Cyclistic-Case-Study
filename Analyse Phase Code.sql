@@ -10,8 +10,8 @@
 6. Average ride duration per month
 7. Start station location for casuals
 8. Start station location for members
-9. End station for location for casuals
-10. End station for location for members 
+9. End station location for casuals
+10. End station location for members 
 
 */
 
