@@ -214,7 +214,7 @@ We also create a bar chart for an alternate perspective: [Users By Ride Type - M
 Looking at the pie chart, it puts things into clear perspective for us to draw the following observations:
 
 1. Members constitute of 63.5% of the total rides, while casual users comprise of 36.5%
-2. It can be said that both casual users and members prefer electric bikes, where ~20% of total rides are electric rides by casual users (including both electric bike and electric scooter), while ~36% of total riides are electric rides by members (including both electric bike and electric scooter).
+2. It can be said that both casual users and members prefer electric bikes, where ~20% of total rides are electric rides by casual users (including both electric bike and electric scooter), while ~36% of total rides are electric rides by members (including both electric bike and electric scooter).
 3. The classic bike share in casual users is 16.67% of total rides, while for members it is 29.44%.
 4. Thus it can be said that members hold the majority in usage of both types of bikes.
 
@@ -253,7 +253,7 @@ Clearly, it can be observed that the annual members' average trip durations are 
 
 For Viz no. 6 - Average ride duration per month, we do the same steps as above: [Average Ride Duration Per Month - Mar 24 to Feb 25](https://public.tableau.com/views/AverageRideDurationPerMonth-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-In this viz, it can once again be clearly seen that the usage is based on the weather conditions for both user types, where trip durations remain consistent among annual members, once again signalling their usage for work or college commute throughout the year, while casual users are seen taking much longer rides, nearly 2x longer than annual members during peak summer months of May, June and July, most likely for leisure.
+In this viz, it can once again be clearly seen that the usage is based on the weather conditions for both user types, where trip durations remain consistent among annual members, once again signaling their usage for work or college commute throughout the year, while casual users are seen taking much longer rides, nearly 2x longer than annual members during peak summer months of May, June and July, most likely for leisure.
 
 **For the following visualizations, we use maps to look only at the top 10 locations to get an idea of the most popular locations among each user type:**
 
@@ -267,7 +267,7 @@ This highlights the top 10 start stations for casuals, where all of them are not
 
 For Viz no. 8, see the map [here](https://public.tableau.com/views/Top10MostPopularStartStationsforMemberRiders-Mar24toFeb25/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-We can observe that members are utilising these stations primarily for work, school or college commute due to the landmarks in the vicinity of the stations such as apartments, banks, colleges and commercial businesses and offices in the city's financial diistrict hotels etc. in the district near Wells St & Concord Ln, Clark St & Elm St, Wells St & Elm St, Kingsbury St & Kinzie St and more.
+We can observe that members are utilising these stations primarily for work, school or college commute due to the landmarks in the vicinity of the stations such as apartments, banks, colleges and commercial businesses and offices in the city's financial district hotels etc. in the district near Wells St & Concord Ln, Clark St & Elm St, Wells St & Elm St, Kingsbury St & Kinzie St and more.
 
 ### Visualization 9: End station for location for casuals
 
