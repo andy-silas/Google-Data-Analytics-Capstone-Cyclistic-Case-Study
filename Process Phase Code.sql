@@ -56,7 +56,7 @@ SET year_name = EXTRACT(year from started_at);
 
 --- END OF PRELIMINARY ACTIONS ---
 
---- COMPREHENSIIVE DATA CLEANING PROCESSES ---
+--- COMPREHENSIVE DATA CLEANING PROCESSES ---
 
 -- 1. To check the number of letters in ride_id column to make sure it is unique:
 
