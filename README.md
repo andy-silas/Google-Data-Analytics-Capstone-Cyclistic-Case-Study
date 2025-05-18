@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This case study is based on the Google Data Analytics Capstone Course from Coursera, where I selected the Cyclistic Bike-Share Analysis Case Study as per Track A to complete the Capstone course towards earning my Google Data Analytics Professional Certificate. I will be discussing on the data compilation and preliminary checks, followed by cleaning, as well as the analysis itself. The tools used in this case study will be SQL (PostgreSQL) and Tableau (Public).
+This case study is based on the Google Data Analytics Capstone Course from Coursera, where I selected the Cyclistic Bike-Share Analysis Case Study as per Track A to complete the Capstone course towards earning my Google Data Analytics Professional Certificate. I will be discussing the data compilation and preliminary checks, followed by cleaning, as well as the analysis itself. The tools used in this case study will be SQL (PostgreSQL) and Tableau (Public).
 
 
 ## About Cyclistic
@@ -44,7 +44,7 @@ The data is organized by months, quarters and years. At the time of completion, 
 
 ### 3. Are there issues with bias or credibility in this data? Does the data ROCCC?
 
-It is confirmed that the data used satisfies the ROCCC criteria since its officially permitted for use under proper authorized [license](https://www.divvybikes.com/data-license-agreement). The data is Reliable, Original, Comprehensive, Current, and Cited.
+It is confirmed that the data used satisfies the ROCCC criteria since it's officially permitted for use under proper authorized [license](https://www.divvybikes.com/data-license-agreement). The data is Reliable, Original, Comprehensive, Current, and Cited.
 
 
 ### 4. How do we address licensing, privacy, security, and accessibility?
@@ -56,7 +56,7 @@ The data has been made available by Motivate International Inc. under this [lice
 
 ### 5. How do we verify the data’s integrity?
 
-The data used satisfies its data intergrity criteria as it is unbiased. No personal information on riders is available, and its comprised of all bike trips recorded during a given time period.
+The data used satisfies its data integrity criteria as it is unbiased. No personal information on riders is available, and its comprised of all bike trips recorded during a given time period.
 
 
 ### 6. Are there any problems with the data?
@@ -82,9 +82,9 @@ In this phase, the data was downloaded for the last 12 months. At the time of co
 2. Add values to **'ride_length'** column by subtracting **'ended_at'** values from **'started_at'**. This will calculate the total trip duration in **hh:mm:ss** format.
 3. Add columns titled **'day_of_week'** and **'day_of_week_name'** to the table.
 4. Add values to the **'day_of_week'** and **'day_of_week_name'** columns - Here, **'day_of_week'** will contain numeric values (i.e. for Sunday, it would contain 0, for Monday = 1, and so on), while **'day_of_week_name'** will contain the name of the day itself (Eg: Sunday, Monday, and so on).
-5. Add a column tilted **'month_name'** to the table.
+5. Add a column titled **'month_name'** to the table.
 6. Add values to the **'month_name'**. These would be - February, March, April, and so on.
-7. Add a column titlted **'year_name'** to the table.
+7. Add a column titled **'year_name'** to the table.
 8. Add values to the **'year_name'** column - i.e. 2024 and 2025, based on the trip start dates in the **'started_at'** column.
 
 
@@ -100,7 +100,7 @@ In this phase, the data was downloaded for the last 12 months. At the time of co
 8. Checking null values in **end_station_id**.
 9. Checking if there are only 2 user types in the **user_type** column. It is confirmed that only **'casual'** and **'member'** user types exist.
 
-***NOTE: Upon inspecting the data, 422 duplicates are identified, where common trip records exist in the months of May and June only. These 422 records are identified and removed accordingly using the query in the code, and the unique 211 records are reuploaded to the table after performing a VLOOKUP check on ride_id between the May and June data sets.** 
+***NOTE: Upon inspecting the data, 422 duplicates are identified, where common trip records exist only in the months of May and June. These 422 records are removed accordingly using the query in the code, and the unique 211 records are reuploaded to the table after performing a VLOOKUP check on ride_id between the May and June data sets.** 
 
 **We then move on to check for outliers to make sure the data analysis is not skewed due to them (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L156)):**
 
@@ -161,7 +161,7 @@ Total Rows Found: 64289
 Now, we update these rows to set **start_station_name** to **'On Scooter Lock State'**
 
 
-4. Finally, we we check the same for **end_station_name**, for **electric_scooter**
+4. Finally, we check the same for **end_station_name**, for **electric_scooter**
 
 Total Rows Found: 64767
 
@@ -171,7 +171,7 @@ We update these rows to set **end_station_name** to **'On Scooter Lock State'**
 Finally, we check if there are any nulls left in **start_station_name** or **end_station_name**. No rows meeting this criteria are found, so it is safe to conclude that all null station names have been replaced with relevant values.
 
 
-**We also check the no. of rides of each type and the no. of rides of each type per user type. The results can be see below:**
+**We also check the no. of rides of each type and the no. of rides of each type per user type. The results can be seen below:**
 
 --SCREENSHOTS TO BE INSERTED HERE--
 
