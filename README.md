@@ -44,7 +44,7 @@ The data is organized by months, quarters and years. At the time of completion, 
 
 ### 3. Are there issues with bias or credibility in this data? Does the data ROCCC?
 
-It is confirmed that the data used satisfies the ROCCC criteria since it's officially permitted for use under proper authorized [license](https://www.divvybikes.com/data-license-agreement). The data is Reliable, Original, Comprehensive, Current, and Cited.
+The data meets the ROCCC criteria and is officially [licensed](https://www.divvybikes.com/data-license-agreement) and authorized for use. The data is Reliable, Original, Comprehensive, Current, and Cited.
 
 
 ### 4. How do we address licensing, privacy, security, and accessibility?
