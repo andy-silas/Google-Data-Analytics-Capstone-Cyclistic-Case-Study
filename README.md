@@ -90,7 +90,7 @@ In this phase, the data was downloaded for the last 12 months. At the time of co
 
 **After the above steps, a series of comprehensive data cleaning processes (see code [here](https://github.com/andy-silas/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/8967204d2673ad0194f14fb7b82290fd200917f7/Process%20Phase%20Code.sql#L59)) are performed as follows:**
 
-1. Checking the number of letters in **'ride_id'** column to make sure it is unique. It is concluded that all results here are 16, i.e. all ride IDs are 16 characters long.
+1. Checking the number of letters in **'ride_id'** column to make sure it is unique. All ride IDs are confirmed to be 16 characters long.
 2. Identification and deletion* of duplicate rows (if any) from the **'bikes_new'** table based on the **'ride_id'**.
 3. Checking for NULL values where **start_station_name**, **start_station_id**, **end_station_name** and **end_station_id** are all NULL.
 4. Checking and removing any rows where **start/end_lat** or **start/end_lng** are NULL, since each ride record (row) should have location coordinates.
